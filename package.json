@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Kartaviy-arteom/zerolab/issues"
   },
-  "homepage": "https://github.com/Kartaviy-arteom/zerolab#readme"
+  "homepage": "https://github.com/Kartaviy-arteom/zerolab#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
+  }
 }
