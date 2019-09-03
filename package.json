@@ -1,0 +1,19 @@
+{
+  "name": "zerolab",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "artem kartaviy",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kartaviy-arteom/zerolab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kartaviy-arteom/zerolab/issues"
+  },
+  "homepage": "https://github.com/Kartaviy-arteom/zerolab#readme"
+}
