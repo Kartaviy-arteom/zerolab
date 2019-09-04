@@ -1,0 +1,38 @@
+.middle-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><line x1='100%' y1='0' x2='100%' y2='100%' stroke='rgb(81, 157, 199)' stroke-width='2' stroke-dasharray='1.668% 0.834%'/></svg>");
+
+	&__wrapper {
+		.flex-start();
+		width: 100%;
+	}
+
+	&__wrapper span:first-child {
+		display: block;
+		width: 100%;
+		text-transform: uppercase;
+		font-family: "Myriad Pro", Arial, sans-serif;
+		font-size: 0.9375rem;
+		padding-top: 1.0625rem;
+		line-height: 1.125rem;
+		color: #041C26;
+	}
+
+	&__date-wrap {
+		width: 59.7%;
+	}
+
+	&__issued {
+		text-transform: uppercase;
+		font-family: "Myriad Pro", Arial, sans-serif;
+		font-size: 0.625rem;
+	}
+}
+
+
+
+
