@@ -7,9 +7,15 @@
 	border-radius: 1.05vw;
 	overflow: hidden;
 }
-.flex-start() {
+.flex(@value) {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: @value;
 	flex-wrap: wrap;
-};
+}
+
+.small-text {
+	font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+	font-size: 0.4375rem;
+	line-height: 0.5rem;
+}
