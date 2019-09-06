@@ -9,9 +9,12 @@
 	&__wrapper {
 		.flex(flex-start);
 		width: 100%;
+    margin-bottom: 0.7rem;
 	}
 
 	&__wrapper>span:first-child {
+    margin-left: 1.5rem;
+    margin-bottom: 0.6rem;
 		display: block;
 		width: 100%;
 		font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
@@ -22,7 +25,7 @@
 	}
 
 	&__date-wrap {
-		padding-top: 2rem;
+		padding-top: 2.2rem;
 		width: 59.7%;
 		.flex(flex-start);
 	}
@@ -34,13 +37,15 @@
 	}
 
 	&__date-wrap>div:nth-child(2) {
-		margin-right: 1rem;
+		margin-right: 1.8rem;
 		width: 50%;
 		.flex(flex-start);
 		text-align: right;
 	}
 
 	&__issued {
+    margin-left: 1.4rem;
+    padding-top: 0.5rem;
 		width: 7%;
 		font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
 		font-size: 0.625rem;
@@ -52,7 +57,7 @@
 		height: auto;
 		margin-right: auto;
 		background: linear-gradient(0deg, #54A1CB, #54A1CB);
-		border-radius: 3px;
+		border-radius: 0.1875rem;
 	    align-self: flex-start;
 
 	    svg {
@@ -84,6 +89,9 @@
 		margin-right: auto;
 		.flex(flex-start);
 		align-content: flex-start;
+    margin-left: 1.3rem;
+    line-height: 1.15;
+
 		span {
 			width: 100%;
 		}
@@ -91,7 +99,7 @@
 
 	&__name {
 		.small-text;
-		padding-bottom: 1rem;
+		padding-bottom: 0.5rem;
 	}
 
 	&__flight-details {
@@ -105,7 +113,7 @@
 	&__flight-details>div:first-child {
 		width: 100%;
 		.flex(space-between);
-		padding-bottom: 0.5rem;
+		padding-bottom: 0.9rem;
 		align-content: flex-start;
 
 		span {
@@ -125,7 +133,7 @@
 
 	&__time {
 		margin-left: auto;
-	} 
+	}
 
 	&__carrier, &__flight-number {
 		width: 32%;
@@ -148,15 +156,17 @@
 
 	&__flight-date {
 		width: 25%;
+    text-align: right;
 	}
 
 	&__departure {
 		width: 100%;
 		.flex(flex-start);
 		margin-top: auto;
-		margin-bottom: 1rem;
+		margin-bottom: 0.9rem;
 
 		svg {
+      margin-left: 1.4rem;
 			width: 8%;
 			height: auto;
 			margin-right: 1.875rem;
@@ -164,6 +174,7 @@
 	}
 
 	&__gate-wrap {
+    margin-right: 1.2rem;
 		width: 23%;
 		.flex(flex-end);
 		flex-direction: column;
@@ -171,10 +182,12 @@
 	}
 
 	&__gate, &__boarding-time {
+    margin-bottom: 0.6rem;
 		font-size: 1.52rem;
 	}
 
 	&__gate-number, &__time-value {
+    margin-bottom: 0.4rem;
 		font-size: 2.9rem;
 		line-height:1.174;
 	}
@@ -188,8 +201,8 @@
 	}
 
 	&__code-info {
+    margin-right: 1.8rem;
 		width: 24%;
-		margin-right: 1rem;
 		.flex(flex-end);
 		flex-direction: column;
 		justify-content: space-between;
@@ -199,12 +212,15 @@
 
 	&__wish {
 		font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
+    line-height: 1.5;
 	}
 
 	&__warning {
+    margin-bottom: 0.4rem;
 		font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
 		text-transform: none;
-		font-size: 1rem;
+		font-size: 1.04rem;
+    line-height: 1.2;
 
 		span {
 			font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
@@ -212,7 +228,7 @@
 	}
 
 	&__code {
-		margin-top: 1rem;
+		margin-top: 1.7rem;
 		.small-text;
 	}
 
@@ -223,6 +239,12 @@
 	&__ticket-number {
 		line-height: 1.15;
 	}
+
+  &__flight-date--day {
+    width: 24%;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 

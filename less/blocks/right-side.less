@@ -2,7 +2,9 @@
 	box-sizing: border-box;
 	box-shadow: 0px 4px 100px #65A9D0;
 	background-image: url("../img/bcg-right-side.png");
-	background-size: 100% 100%;
+	background-size: 134% 100%;
+  background-position-x: -6.3rem;
+  background-color: #80B8D9;
 	background-repeat: no-repeat;
 	.flex(flex-start);
 	padding-left: 1rem;
@@ -13,15 +15,15 @@
 
     &>div:first-child {
     	width: 100%;
-    	.flex(space-beetwen);
+    	.flex(space-beetween);
     }
 
 	&__logo {
 		margin-top: 1.1875rem;
-		width: 48.5%;
+		width: 51.5%;
 		align-self: flex-start;
 		background: linear-gradient(0deg, #448BB1, #448BB1);
-		border-radius: 3px;
+		border-radius: 0.1875rem;
 
 		svg {
 			display: block;
@@ -32,26 +34,34 @@
 
 	&__boarding-pass {
 		width: 42%;
-		margin-right: 0.5rem;
+		margin-right: 0.4rem;
 		margin-top: 1.5rem;
 		margin-left: auto;
 		font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
 		font-size: 0.72rem;
+    line-height: 1.17;
 	}
 
 	&__name {
 		.small-text;
 		width: 100%;
+    margin-top: 1.3rem;
 	}
 
 	&__name-value, &__company {
 		width: 100%;
+    line-height: 1.18;
 	}
+
+  &__name-value {
+    margin-bottom: 1.2rem;
+  }
 
 	&__from {
 		.small-text;
 		margin-left: 1.625rem;
 		width: 100%;
+    margin-bottom: 0.1rem;
 	}
 
 	&__cities {
@@ -60,19 +70,19 @@
 	}
 
 	&__terminal {
-		margin-left: 1.25rem;
-		margin-bottom: 4.6rem;
+		margin-left: 0.9rem;
+		margin-bottom: 2.7rem;
 		width: 100%;
 	}
 
 	&__flight-details, &__gate-wrap {
 		.flex(flex-start);
-		margin-left: 1.25rem;
+		margin-left: 0.9rem;
 		width: 100%;
 	}
 
 	&__flight-details {
-		margin-bottom: 1rem;
+		margin-bottom: 1.3rem;
 	}
 
 	&__flight-number, &__date, &__time, &__gate, &__board, &__board {
@@ -81,12 +91,10 @@
 
 	&__flight-number, &__trip {
 		width: 37%;
-		margin-right: 0.5rem;
 	}
 
 	&__date, &__day {
 		width: 27%;
-		margin-right: 0.5rem;
 	}
 
 	&__time, &__time-value {
@@ -95,8 +103,9 @@
 	}
 
 	&__gate-wrap>div:first-child {
+    width: 14%;
 		min-width: 16%;
-		margin-right: 0.8rem;
+		margin-right: 0.5rem;
 		.flex(flex-start);
 
 		span {
@@ -115,6 +124,7 @@
 	}
 
 	&__gate-wrap>div:nth-child(3) {
+    margin-right: 1rem;
 		width: 30%;
 		.flex(flex-start);
 
