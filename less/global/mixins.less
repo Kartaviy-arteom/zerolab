@@ -19,3 +19,10 @@
 	font-size: 0.4375rem;
 	line-height: 0.5rem;
 }
+
+.line-clamp(@lineValue) {
+  display: -webkit-box;
+  -webkit-line-clamp: @lineValue;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -22,6 +22,7 @@
 		padding-top: 1.0625rem;
 		line-height: 1.125rem;
 		color: #041C26;
+    .line-clamp(2);
 	}
 
 	&__date-wrap {
@@ -50,6 +51,7 @@
 		font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
 		font-size: 0.625rem;
 		vertical-align: top;
+    .line-clamp(6);
 	}
 
 	&__logo {
@@ -69,6 +71,7 @@
 
 	&__date-of-issue, &__iso, &__issagt, &__place {
 		.small-text;
+    .line-clamp(2);
 	}
 
 	&__iso {
@@ -77,6 +80,7 @@
 
 	&__at {
 		margin-left: auto;
+    .line-clamp(2);
 	}
 
 	&__flight {
@@ -94,6 +98,7 @@
 
 		span {
 			width: 100%;
+      .line-clamp(2);
 		}
 	}
 
@@ -118,6 +123,7 @@
 
 		span {
 			width: 50%;
+      .line-clamp(2);
 		}
 	}
 
@@ -133,9 +139,11 @@
 
 	&__time {
 		margin-left: auto;
+    .line-clamp(2);
 	}
 
 	&__carrier, &__flight-number {
+    .line-clamp(2);
 		width: 32%;
 		margin-right: 1.125rem;
 	}
@@ -147,12 +155,17 @@
 
 	&__flight-time {
 		margin-left: auto;
+    .line-clamp(2);
 	}
 
 	&__class-number {
 		display: block;
 		width: 12%;
 	}
+
+  &__class {
+    .line-clamp(2);
+  }
 
 	&__flight-date {
 		width: 25%;
@@ -182,11 +195,13 @@
 	}
 
 	&__gate, &__boarding-time {
+    .line-clamp(2);
     margin-bottom: 0.6rem;
 		font-size: 1.52rem;
 	}
 
 	&__gate-number, &__time-value {
+    .line-clamp(2);
     margin-bottom: 0.4rem;
 		font-size: 2.9rem;
 		line-height:1.174;
@@ -211,11 +226,13 @@
 	}
 
 	&__wish {
+    .line-clamp(2);
 		font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
     line-height: 1.5;
 	}
 
 	&__warning {
+    .line-clamp(2);
     margin-bottom: 0.4rem;
 		font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
 		text-transform: none;
@@ -228,22 +245,30 @@
 	}
 
 	&__code {
+    .line-clamp(2);
 		margin-top: 1.7rem;
 		.small-text;
 	}
 
 	&__code-value {
+    .line-clamp(2);
 		margin-bottom: auto;
 	}
 
 	&__ticket-number {
+    .line-clamp(2);
 		line-height: 1.15;
 	}
 
   &__flight-date--day {
+    .line-clamp(2);
     width: 24%;
     margin-right: auto;
     text-align: center;
+  }
+
+  &__date, &__date-of-issue {
+    .line-clamp(2);
   }
 }
 
