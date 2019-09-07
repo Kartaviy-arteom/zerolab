@@ -13,10 +13,14 @@
 	flex-direction: column;
     align-content: flex-start;
 
-    &>div:first-child {
-    	width: 100%;
-    	.flex(space-beetween);
-    }
+  &>div:first-child {
+  	width: 100%;
+  	.flex(space-beetween);
+  }
+
+  &>* {
+    .line-clamp(2);
+  }
 
 	&__logo {
 		margin-top: 1.1875rem;
@@ -33,6 +37,7 @@
 	}
 
 	&__boarding-pass {
+    .line-clamp(2);
 		width: 42%;
 		margin-right: 0.4rem;
 		margin-top: 1.5rem;
@@ -40,16 +45,17 @@
 		font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
 		font-size: 0.72rem;
     line-height: 1.17;
+    align-self: flex-start;
 	}
 
 	&__name {
 		.small-text;
-		width: 100%;
+		width: 90%;
     margin-top: 1.3rem;
 	}
 
 	&__name-value, &__company {
-		width: 100%;
+		width: 90%;
     line-height: 1.18;
 	}
 
@@ -60,19 +66,20 @@
 	&__from {
 		.small-text;
 		margin-left: 1.625rem;
-		width: 100%;
+    margin-right: 0.5rem;
+		width: 85%;
     margin-bottom: 0.1rem;
 	}
 
 	&__cities {
 		margin-left: 1.625rem;
-		width: 100%;
+		width: 85%;
 	}
 
 	&__terminal {
 		margin-left: 0.9rem;
 		margin-bottom: 2.7rem;
-		width: 100%;
+		width: 85%;
 	}
 
 	&__flight-details, &__gate-wrap {
@@ -83,6 +90,10 @@
 
 	&__flight-details {
 		margin-bottom: 1.3rem;
+
+    &>* {
+    .line-clamp(2);
+    }
 	}
 
 	&__flight-number, &__date, &__time, &__gate, &__board, &__board {
@@ -109,6 +120,7 @@
 		.flex(flex-start);
 
 		span {
+      .line-clamp(2);
 			width: 100%;
 		}
 	}
@@ -119,6 +131,7 @@
 		.flex(flex-start);
 
 		span {
+      .line-clamp(2);
 			width: 100%;
 		}
 	}
@@ -129,6 +142,7 @@
 		.flex(flex-start);
 
 		span {
+      .line-clamp(2);
 			width: 100%;
 		}
 	}
@@ -140,6 +154,6 @@
 	&__strange-number {
 		margin-bottom:0.75rem;
 		margin-left: 0.81rem;
-		width: 100%;
+		width: 90%;
 	}
 }
