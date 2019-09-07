@@ -1,0 +1,825 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+template,
+[hidden] {
+  display: none;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+          text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+optgroup {
+  font-weight: bold;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+          appearance: none;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+@font-face {
+  font-family: "Myriad Pro Semibold SemiCondensed";
+  src: url("../fonts/Myriad Pro Semibold SemiCondensed.woff2") format("woff2"), url("../fonts/Myriad Pro Semibold SemiCondensed.woff") format("woff");
+}
+@font-face {
+  font-family: "Myriad Pro SemiCondensed";
+  src: url("../fonts/Myriad Pro SemiCondensed.woff2") format("woff2"), url("../fonts/Myriad Pro SemiCondensed.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: bold;
+  src: url("../fonts/RobotoMono-Bold.woff2") format("woff2"), url("../fonts/RobotoMono-Bold.woff") format("woff");
+}
+html {
+  font-size: 0.8333vw;
+}
+body {
+  background: #E5E5E5;
+}
+.small-text {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+}
+.front-side {
+  box-sizing: border-box;
+  position: relative;
+  width: 59.54vw;
+  height: calc(59.54vw/2.38);
+  -webkit-clip-path: polygon(0% 0%, 0% 45.63%, 0.7% 45.63%, 0.7% 54.37%, 0% 54.37%, 0% 100%, 100% 100%, 100% 54.37%, 99.3% 54.37%, 99.3% 45.63%, 100% 45.63%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 45.63%, 0.7% 45.63%, 0.7% 54.37%, 0% 54.37%, 0% 100%, 100% 100%, 100% 54.37%, 99.3% 54.37%, 99.3% 45.63%, 100% 45.63%, 100% 0%);
+  border-radius: 1.05vw;
+  overflow: hidden;
+  margin: 20vh auto 20vh auto;
+  background-image: url('../img/shutterstock_525011896.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #57A3CB;
+}
+.front-side svg {
+  position: absolute;
+  fill: #fff;
+  width: 11%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.reverse-side {
+  box-sizing: border-box;
+  position: relative;
+  width: 59.54vw;
+  height: calc(59.54vw/2.38);
+  -webkit-clip-path: polygon(0% 0%, 0% 45.63%, 0.7% 45.63%, 0.7% 54.37%, 0% 54.37%, 0% 100%, 100% 100%, 100% 54.37%, 99.3% 54.37%, 99.3% 45.63%, 100% 45.63%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 45.63%, 0.7% 45.63%, 0.7% 54.37%, 0% 54.37%, 0% 100%, 100% 100%, 100% 54.37%, 99.3% 54.37%, 99.3% 45.63%, 100% 45.63%, 100% 0%);
+  border-radius: 1.05vw;
+  overflow: hidden;
+  margin: 0 auto 20vh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #fff;
+  font-family: "Roboto Mono", Arial, sans-serif;
+  line-height: 1.18;
+  font-size: 1.375rem;
+  color: #041C26;
+}
+.reverse-side__left-side {
+  width: 5.34%;
+}
+.reverse-side__middle-side {
+  width: 68%;
+}
+.reverse-side__right-side {
+  width: 26.66%;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 0.8125rem;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  transform: rotate(180deg);
+  font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
+  line-height: 1.1;
+  text-align: center;
+}
+.left-side div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-height: 100%;
+}
+.middle-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><line x1='100%' y1='0' x2='100%' y2='100%' stroke='rgb(81, 157, 199)' stroke-width='2' stroke-dasharray='1.029% 0.514%'/></svg>");
+}
+.middle-side__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+.middle-side__wrapper > span:first-child {
+  margin-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  display: block;
+  width: 100%;
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.9375rem;
+  padding-top: 1.0625rem;
+  line-height: 1.125rem;
+  color: #041C26;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__date-wrap {
+  padding-top: 2.2rem;
+  width: 59.7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.middle-side__date-wrap > div:first-child {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+.middle-side__date-wrap > div:nth-child(2) {
+  margin-right: 1.8rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: right;
+}
+.middle-side__issued {
+  margin-left: 1.4rem;
+  padding-top: 0.5rem;
+  line-height: 1.2;
+  width: 7%;
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.625rem;
+  vertical-align: top;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  align-self: flex-start;
+}
+.middle-side__logo {
+  width: 19%;
+  height: auto;
+  margin-right: auto;
+  background: linear-gradient(0deg, #54A1CB, #54A1CB);
+  border-radius: 0.1875rem;
+  align-self: flex-start;
+}
+.middle-side__logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.middle-side__date-of-issue,
+.middle-side__iso,
+.middle-side__issagt,
+.middle-side__place {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__iso {
+  width: 100%;
+}
+.middle-side__at {
+  margin-left: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__flight {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.middle-side__flight > div:first-child {
+  width: 34%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-left: 1.3rem;
+  line-height: 1.15;
+}
+.middle-side__flight > div:first-child span {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__name {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.middle-side__flight-details {
+  padding-top: 0.5rem;
+  width: 42%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-right: 17.8%;
+}
+.middle-side__flight-details > div:first-child {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 0.9rem;
+  align-content: flex-start;
+}
+.middle-side__flight-details > div:first-child span {
+  width: 50%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__place,
+.middle-side__destination {
+  text-align: right;
+}
+.middle-side__flight-details > div:nth-child(2) {
+  width: 100%;
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.middle-side__time {
+  margin-left: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__carrier,
+.middle-side__flight-number {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 32%;
+  margin-right: 1.125rem;
+}
+.middle-side__flight-details > div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.middle-side__flight-time {
+  margin-left: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__class-number {
+  display: block;
+  width: 12%;
+}
+.middle-side__class {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.middle-side__flight-date {
+  width: 25%;
+  text-align: right;
+}
+.middle-side__departure {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: 0.9rem;
+}
+.middle-side__departure svg {
+  margin-left: 1.4rem;
+  width: 8%;
+  height: auto;
+  margin-right: 1.875rem;
+}
+.middle-side__gate-wrap {
+  margin-right: 1.2rem;
+  width: 23%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.middle-side__gate,
+.middle-side__boarding-time {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+  font-size: 1.52rem;
+}
+.middle-side__gate-number,
+.middle-side__time-value {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+  font-size: 2.9rem;
+  line-height: 1.174;
+}
+.middle-side__boarding-info {
+  margin-right: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.middle-side__code-info {
+  margin-right: 1.8rem;
+  width: 24%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  text-align: right;
+}
+.middle-side__wish {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
+  line-height: 1.5;
+}
+.middle-side__warning {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+  font-family: "Myriad Pro SemiCondensed", Arial, sans-serif;
+  text-transform: none;
+  font-size: 1.04rem;
+  line-height: 1.2;
+}
+.middle-side__warning span {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+}
+.middle-side__code {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 1.7rem;
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+}
+.middle-side__code-value {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: auto;
+}
+.middle-side__ticket-number {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.15;
+}
+.middle-side__flight-date--day {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 24%;
+  margin-right: auto;
+  text-align: center;
+}
+.middle-side__date,
+.middle-side__date-of-issue {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.right-side {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 100px #65A9D0;
+  background-image: url("../img/bcg-right-side.jpg");
+  background-size: 134% 100%;
+  background-position-x: -6.3rem;
+  background-color: #80B8D9;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.right-side > div:first-child {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-beetween;
+  flex-wrap: wrap;
+}
+.right-side > * {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.right-side__logo {
+  margin-top: 1.1875rem;
+  width: 51.5%;
+  align-self: flex-start;
+  background: linear-gradient(0deg, #448BB1, #448BB1);
+  border-radius: 0.1875rem;
+}
+.right-side__logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.right-side__boarding-pass {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 42%;
+  margin-right: 0.4rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.17;
+  align-self: flex-start;
+}
+.right-side__name {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+  width: 90%;
+  margin-top: 1.3rem;
+}
+.right-side__name-value,
+.right-side__company {
+  width: 90%;
+  line-height: 1.18;
+}
+.right-side__name-value {
+  margin-bottom: 1.2rem;
+}
+.right-side__from {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+  margin-left: 1.625rem;
+  margin-right: 0.5rem;
+  width: 85%;
+  margin-bottom: 0.1rem;
+}
+.right-side__cities {
+  margin-left: 1.625rem;
+  width: 85%;
+}
+.right-side__terminal {
+  margin-left: 0.9rem;
+  margin-bottom: 2.7rem;
+  width: 85%;
+}
+.right-side__flight-details,
+.right-side__gate-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 0.9rem;
+  width: 100%;
+}
+.right-side__flight-details {
+  margin-bottom: 1.3rem;
+}
+.right-side__flight-details > * {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.right-side__flight-number,
+.right-side__date,
+.right-side__time,
+.right-side__gate,
+.right-side__board,
+.right-side__board {
+  font-family: "Myriad Pro Semibold SemiCondensed", Arial, sans-serif;
+  font-size: 0.4375rem;
+  line-height: 0.5rem;
+}
+.right-side__flight-number,
+.right-side__trip {
+  width: 37%;
+}
+.right-side__date,
+.right-side__day {
+  width: 27%;
+}
+.right-side__time,
+.right-side__time-value {
+  width: 25%;
+  margin-right: 0.5rem;
+}
+.right-side__gate-wrap > div:first-child {
+  width: 14%;
+  min-width: 16%;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.right-side__gate-wrap > div:first-child span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+}
+.right-side__gate-wrap > div:nth-child(2) {
+  width: 37%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.right-side__gate-wrap > div:nth-child(2) span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+}
+.right-side__gate-wrap > div:nth-child(3) {
+  margin-right: 1rem;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.right-side__gate-wrap > div:nth-child(3) span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+}
+.right-side__gate-wrap {
+  margin-bottom: auto;
+}
+.right-side__strange-number {
+  margin-bottom: 0.75rem;
+  margin-left: 0.81rem;
+  width: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */
